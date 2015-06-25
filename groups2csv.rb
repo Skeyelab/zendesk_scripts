@@ -8,16 +8,10 @@ Dotenv.load
 
 
 client = ZendeskAPI::Client.new do |config|
-
   config.url = "https://"+ENV["ZD_DOMAIN"]+"/api/v2" # e.g. https://mydesk.zendesk.com/api/v2
-
-
   config.username = ENV["ZD_USER"]
-
   config.token = ENV["ZD_TOKEN"]
-
   config.retry = true
-
 end
 
 
@@ -26,8 +20,6 @@ emails = {}
 grplist = []
 data =[]
 users =[]
-
-
 
 progressbar = ProgressBar.create(:title=>"Gathering agent IDs",:starting_at => 0, :total => 3, :format         => '%a %bᗧ%i %p%% %t',
                                  :progress_mark  => ' ',
