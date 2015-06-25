@@ -1,0 +1,27 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    dotenv (2.0.2)
+    faraday (0.9.1)
+      multipart-post (>= 1.2, < 3)
+    hashie (3.4.2)
+    inflection (1.0.0)
+    mime-types (2.6.1)
+    multi_json (1.11.1)
+    multipart-post (2.0.0)
+    ruby-progressbar (1.7.5)
+    zendesk_api (1.9.4)
+      faraday (~> 0.9)
+      hashie (>= 1.2, < 4.0, != 3.3.0)
+      inflection
+      mime-types
+      multi_json
+      multipart-post (~> 2.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  dotenv
+  ruby-progressbar
+  zendesk_api
