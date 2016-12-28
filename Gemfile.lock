@@ -1,15 +1,22 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    coderay (1.1.1)
     dotenv (2.0.2)
     faraday (0.9.1)
       multipart-post (>= 1.2, < 3)
     hashie (3.4.2)
     inflection (1.0.0)
+    method_source (0.8.2)
     mime-types (2.6.1)
     multi_json (1.11.1)
     multipart-post (2.0.0)
+    pry (0.10.4)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
     ruby-progressbar (1.7.5)
+    slop (3.6.0)
     zendesk_api (1.9.4)
       faraday (~> 0.9)
       hashie (>= 1.2, < 4.0, != 3.3.0)
@@ -23,5 +30,9 @@ PLATFORMS
 
 DEPENDENCIES
   dotenv
+  pry
   ruby-progressbar
   zendesk_api
+
+BUNDLED WITH
+   1.13.6
